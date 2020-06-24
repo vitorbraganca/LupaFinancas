@@ -1,0 +1,63 @@
+@import "reset.css";
+@import "normalize.css";
+@import "grid.css";
+@import "styles.css";
+
+/* Manutencao */
+
+
+
+.manutencao {
+
+    text-align: center;
+
+    width: 100%;
+
+    height: 100vh;
+
+    padding: 60px 0;
+
+    background-image: url("../img/milestones-bg.jpg");
+
+    background-position: center;
+
+    background-repeat: repeat;
+
+    background-size: cover;
+
+    color: white;
+
+}
+
+
+
+.manutencao h1 {
+
+    font-size: 48px;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+}
+
+
+
+.manutencao h2 {
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.manutencao .btn {
+
+    margin-top: 20px;
+
+}
+

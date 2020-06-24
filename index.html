@@ -26,6 +26,9 @@
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/grid.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsivo.css">
+    <link rel="stylesheet" type="text/css" href="./css/menu-mobile.css">
+
 
     <!-- Fontes -->
 
@@ -45,14 +48,19 @@
             <a href="./index.html" class="grid-2 header_logo">
                 <img src="./img/logo.svg" alt="Lupa nas financas">
             </a>
-
-            <nav class="header_menu">
-                <ul class="grid-14">
-                    <li><a href="./sobre.html">Sobre nós</a></li>
-                    <li><a href="./solucoes.html">Soluções</a></li>
-                    <li><a href="./contato.html">Contatos</a></li>
+                <nav class="header_menu">
+                <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+                <ul class="grid-14 active" data-menu="list" id="menu">
+<!--                    MUDAR CAMINHO PARA PAGINAS DEFINITIVAS-->
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./manutencao.html">Aulas</a></li>
+                    <li><a href="#">Login ⮩</a></li>
+                    <li id="header-btn-li"><a id="header-btn" href="./teste.html" target="_blank">Simule
+                        grátis</a></li>
                 </ul>
             </nav>
+            <a id="mobile-btn" href="./teste.html" target="_blank">Simule grátis</a>
+
         </div>
     </header>
     <!-- Header Section End -->
@@ -60,20 +68,74 @@
     <!-- Introducao Section -->
     <section class="introducao">
         <div class="container">
-            <img src="./img/introducao-img.svg" alt="Lupa nas Finanças">
             <h1>Lupa nas Finanças</h1>
-            <h2>Formas de você economizar no orçamento familiar e transformar sua sobra em
+            <h2>Formas de você economizar no orçamento familiar e transformar seu saldo em
                 investimentos.</h2>
 
 
 <!--            Colocar link para a página/ancora correta -->
             <div class="call">
-                <a href="#" class="btn">Coloque uma Lupa nas suas Finanças.</a>
+                <a href="./teste.html" class="btn" target="_blank">Coloque uma Lupa nas suas Finanças</a>
             </div>
 
         </div>
     </section>
     <!-- Introducao Section End -->
+
+    <!-- Informativo Section -->
+    <section class="container informativo">
+        <h2 class="subtitulo">Transformando seu saldo em investimentos</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab amet atque consectetur
+            consequatur dolor esse iure laborum minima, molestias neque nobis, nostrum, omnis quas
+            quia ratione sint vero voluptate. Assumenda blanditiis culpa dolorem fuga laudantium
+            molestias quasi sequi tempore? Blanditiis corporis et eveniet. Corporis dolore, earum
+            eius perspiciatis placeat quasi reiciendis suscipit tempora. Cumque dignissimos nisi
+            nobis praesentium voluptas.
+        </p>
+        <p>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus autem
+            consectetur corporis ipsum minima necessitatibus non nostrum omnis pariatur rem
+            similique voluptatibus! Adipisci, aliquid commodi cupiditate fugiat pariatur
+            sed!</span>
+            <span>Asperiores atque consectetur cupiditate doloribus error facilis
+            fugiat hic illo illum ipsum iste iusto nobis numquam pariatur possimus praesentium
+            quia quibusdam rem repellat rerum sed, sequi, tenetur vero vitae voluptatem.</span>
+        </p>
+
+        <div class="call">
+            <p>Quer saber mais sobre como economizar?</p>
+            <a href="./sobre.html" class="btn">Saiba mais</a>
+        </div>
+
+    </section>
+    <!-- Informativo Section End -->
+
+    <!-- Acessar Lupa -->
+    <section class="acessar">
+        <div class="container">
+            <h2 class="subtitulo">Veja como podemos ajudar você</h2>
+            <p>
+                Nós podemos ajudar você a <strong>realizar um sonho</strong>que você acreditava
+                estar distante por causa da situação financeira, <strong>fazer aquela
+                viagem</strong> que você tenta fazer mas parece que não sobre dinheiro,
+                <strong>comprar algo que você tem vontade</strong> mas ainda não conseguiu juntar
+                o suficiente <strong>e muito mais!</strong>
+            </p>
+
+            <div class="call-lupa">
+
+                <h3>Fale com a Lupa, o nosso assistente virtual com inteligência artificial que
+                    está sempre pronto para te ajudar!</h3>
+
+                <img src="./img/acesso-lupa.svg" alt="Lupa">
+                <!--            Colocar link para a página/ancora correta -->
+                <a href="./teste.html" class="btn" target="_blank">Coloque uma Lupa nas suas Finanças</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Acessar App End -->
 
     <!-- Footer Section -->
     <footer>
@@ -90,20 +152,20 @@
                 <div class="grid-4 footer_contato">
                     <h3>Contato</h3>
                     <ul>
-                        <li>(21) 9999-9999</li>
-                        <li>contato@nexusjr.com</li>
-                        <li>Duque de Caxias  - RJ</li>
+                        <li>(31) 9999-9999</li>
+                        <li>contato@email.com</li>
+                        <li>Belo Horizonte - MG</li>
                     </ul>
                 </div>
 
                 <div class="grid-4 footer_redes">
                     <h3>Redes sociais</h3>
                     <ul>
-                        <li><a href=https://bit.ly/3666Zis" target="_blank">
+                        <li><a href="#" target="_blank">
                             <img src="img/redes-sociais/instagram.svg"></a></li>
-                        <li><a href="https://bit.ly/3fTK3HQ" target="_blank">
+                        <li><a href="#" target="_blank">
                             <img src="img/redes-sociais/facebook.svg"></a></li>
-                        <li><a href="https://bit.ly/2zOkwPz" target="_blank">
+                        <li><a href="#" target="_blank">
                             <img src="img/redes-sociais/linkedin.svg"></a></li>
                     </ul>
 
@@ -114,13 +176,19 @@
 
         <div class="copy">
             <div class="container">
-                <p class="grid-7">Lupa nas Finanças 2020 - Todos os direitos reservados.</p>
+                <div class="grid-7">
+                    <p>Lupa nas Finanças 2020</p>
+                    <p> Todos os direitos reservados.</p>
+                </div>
                 <div class="grid-8">
                     <nav class="footer_menu">
                         <ul>
-                            <li><a href="./sobre.html">Sobre nós</a></li>
-                            <li><a href="./solucoes.html">Soluções</a></li>
-                            <li><a href="./contato.html">Contatos</a></li>
+                            <!--                             MUDAR CAMINHO PARA PAGINAS DEFINITIVAS-->
+                            <li><a href="./sobre.html">Sobre</a></li>
+                            <li><a href="./manutencao.html">Aulas</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li id="footer-btn-li"><a id="footer-btn" href="./teste.html" target="_blank">
+                                Simule</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -129,5 +197,9 @@
 
     </footer>
     <!-- Footer Section End -->
+
+    <script type="module" src="./js/script.js"></script>
+
+    <script src="//code.tidio.co/t7vbf5sj5gpuwvbx01ckqctm5hbzrsxo.js" async></script>
 
 </body>

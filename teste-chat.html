@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Titulo</title>
+
+    <meta name="description"
+          content="">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:title" content=""/>
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="website"/>
+    <meta property="og:description"
+          content="">
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+
+
+    <!-- Stilos -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <style>
+        body{
+            background-color: red;
+            color: white;
+            font-family: Montserrat, serif;
+            height: 10vh;
+            width: 100vw;
+            text-align: center;
+        }
+        #cf-context {
+            background-color: #6E28BF;
+            width: 99vw;
+            height: 85vh;
+            margin: 0;
+        }
+        #form {
+            height: 0px;
+            overflow: hidden;
+        }
+
+    </style>
+
+    <!-- Fontes -->
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.svg">
+
+    <!-- Script -->
+    <script>document.documentElement.classList.add("js");</script>
+
+
+</head>
+<body>
+
+<header>
+    <h1>Fase de testes!</h1>
+</header>
+
+<form id="form">
+
+<!--     Introducao -->
+    <cf-robot-message cf-questions="Olá 👋 Eu sou a Lupa!"></cf-robot-message>
+    <cf-robot-message
+            cf-questions="Fui criada para te ajudar a transformar o seu saldo em investimentos"></cf-robot-message>
+
+    <fieldset
+            cf-questions="Gostaria de uma simulação grátis e saber como transformar seu saldo em investimentos?">
+        <label for="intro-yes">Sim, claro!
+            <input type="radio" name="cfc-intro" id="intro-yes" value="yes">
+        </label>
+
+        <label for="intro-no">Não, não preciso disso...
+            <input type="radio" name="cfc-intro" id="intro-no" value="no">
+        </label>
+
+    </fieldset>
+
+<!--    Fim Introducao / Inicio Form -->
+
+<!--    Input Nome -->
+    <input type="text" name="leadNome"
+           cf-questions="Vamos nos conhecer melhor. Como você gostaria de ser chamado?"
+           cf-conditional-cfc-intro="yes" cf-error="Esse número não parece correto... ☹️"/>
+    <cf-robot-message
+            cf-questions="{leadNome}, que nome incrível! Já anotei aqui!"></cf-robot-message>
+
+<!--    Input Email-->
+    <input type="email" name="leadEmail"
+           cf-questions="Agora preciso saber como entrar em contato com você! Qual o seu melhor e-mail?"
+           cf-conditional-cfc-intro="yes" cf-error="Esse e-mail não parece correto... ☹️">
+
+<!--    Input telefone -->
+    <input type="number" name="leadTelefone"
+           cf-questions="Só mais uma, prometo! Qual o seu número de telefone, COM O DDD, pra gente se falar depois?" cf-conditional-cfc-intro="yes" cf-error="Esse número não parece correto... ☹️">
+
+    <cf-robot-message cf-questions="Agora que já tenho como entrar em contato com você, vamos ao que interessa agora?"></cf-robot-message>
+
+    <input type="number" name="leadRendaMensal"
+           cf-questions="Qual a sua renda mensal, aproximadamente?" cf-conditional-cfc-intro="yes">
+
+
+    <input type="number" name="leadGastoMensal"
+           cf-questions="Uau! Desses R${leadRendaMensal}, quanto você gasta por mês?"
+           cf-conditional-cfc-intro="yes">
+
+<!--    TENTAR IMPLEMENTAR O CALCULO EM TEMPO REAL, ENQUANTO ISSO, VAI SER DEPOIS MESMO -->
+    <cf-robot-message
+            cf-questions="Ótimo, {leadNome}! Já anotei tudinho, vou fazer alguns cálculos e envio para o seu e-mail em alguns instantes!"></cf-robot-message>
+
+<!-- CALL TO ACTION -> AULAS ONLINE -->
+
+    <!-- Caso resposta seja NAO-->
+    <cf-robot-message cf-questions="Ok... Se mudar de ideia, estarei aqui!" cf-conditional-cfc-intro="no"></cf-robot-message>
+
+</form>
+
+<div id="cf-context" role="cf-context" cf-context></div>
+
+
+<script type="text/javascript" src="./js/main.js" crossorigin></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js" crossorigin></script>
+
+
+</body>

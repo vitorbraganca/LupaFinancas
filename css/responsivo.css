@@ -1,0 +1,121 @@
+
+
+/* Estilo para tablets */
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+    /* Header */
+    .header {
+        position: relative;
+        height: 7vh;
+        padding: 1% 0;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .call-lupa .btn {
+        font-size: 0.8rem;
+    }
+
+    .titulo-interno {
+        margin-top: 0;
+    }
+
+    .titulo-sobre {
+        font-size: 2.75rem;
+    }
+    .quem-somos {
+        clear: both;
+        margin-bottom: 320px;
+    }
+    .sobre-texto {
+        width: 340px;
+    }
+    .sobre-imagem {
+        margin-top: 80px;
+        width: 380px;
+        height: 240px;
+        margin-left: 18px;
+    }
+    .texto-gd {
+        width: 80vw;
+    }
+
+}
+
+/* ESTILO PARA SMARTPHONES */
+@media only screen and (max-width: 787px) {
+
+    /* HEADER MOBILE*/
+    .header {
+        position: relative;
+    }
+
+    .header img {
+        margin: 0 auto 8%;
+    }
+
+    .header_menu {
+        margin: 0 auto 5%;
+        align-content: center;
+    }
+
+    #mobile-btn {
+        text-align: center;
+        width: 50vw;
+        display: block;
+        margin: 0 auto;
+        background-color: #817BE6;
+        padding: 5% 10%;
+        border-radius: 15px;
+        color: white;
+        transition: 500ms;
+    }
+
+    #mobile-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+    /* FOOTER */
+    .footer {
+        max-height: 100%;
+        text-align: center;
+    }
+
+    .footer .footer_historia {
+        margin: 5% auto;
+        padding: 0;
+    }
+
+    .footer .footer_historia h3 {
+        text-align: center;
+    }
+
+    .footer h3:after {
+        margin: 1% auto;
+    }
+    
+    /*COPY*/
+    .copy .grid-7, .copy .grid-8 {
+        margin: 0 auto 3%;
+    }
+    .copy, .footer_menu {
+        text-align: center;
+    }
+
+    
+
+
+    /* CONTEUDO */
+    /*CALL TO ACTION MOBILE*/
+    .call-lupa h3 {
+        width: 85%;
+    }
+
+    .call-lupa {
+        padding-bottom: 5%;
+    }
+}
+
