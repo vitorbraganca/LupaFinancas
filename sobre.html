@@ -40,23 +40,26 @@
 
 </head>
 <body>
+
 <!-- Header Section -->
 <header class="header">
     <div class="container">
         <a href="./index.html" class="grid-2 header_logo">
             <img src="./img/logo.svg" alt="Lupa nas financas">
         </a>
-
         <nav class="header_menu">
-            <ul class="grid-14">
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul class="grid-14 active" data-menu="list" id="menu">
                 <!--                    MUDAR CAMINHO PARA PAGINAS DEFINITIVAS-->
                 <li><a href="./sobre.html">Sobre</a></li>
                 <li><a href="./manutencao.html">Aulas</a></li>
                 <li><a href="#">Login ⮩</a></li>
-                <li id="header-btn-li"><a id="header-btn" href="./manutencao.html">Simule
+                <li id="header-btn-li"><a id="header-btn" href="./teste-chat.html" target="_blank">Simule
                     grátis</a></li>
             </ul>
         </nav>
+        <a id="mobile-btn" href="./teste-chat.html" target="_blank">Simule grátis</a>
+
     </div>
 </header>
 <!-- Header Section End -->
@@ -208,7 +211,8 @@
                         <li><a href="./sobre.html">Sobre</a></li>
                         <li><a href="./manutencao.html">Aulas</a></li>
                         <li><a href="#">Login</a></li>
-                        <li id="footer-btn-li"><a id="footer-btn" href="./manutencao.html">
+                        <li id="footer-btn-li"><a id="footer-btn" href="./teste-chat.html"
+                                                  target="_blank">
                             Simule</a></li>
                     </ul>
                 </nav>

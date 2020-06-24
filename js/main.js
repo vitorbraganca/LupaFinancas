@@ -2,9 +2,10 @@ window.onload = function(){
     var conversationalForm = window.cf.ConversationalForm.startTheConversation({
         formEl: document.getElementById("form"),
         context: document.getElementById("cf-context"),
-        theme: "purple",
         showProgressBar: true,
-        robotImage: "http://lupanasfinancas.vitorbraganca.com/img/acesso-lupa.svg",
+        robotImage: "http://lupanasfinancas.vitorbraganca.com/img/robot-img.svg",
+        userImage: "http://lupanasfinancas.vitorbraganca.com/img/user-img.svg",
+        theme: "dark-theme",
         submitCallback: function(){
             alert("Submit: check dev tools console for more");
             // be aware that this prevents default form submit.
@@ -12,7 +13,8 @@ window.onload = function(){
             var formDataSerialized = conversationalForm.getFormData(true);
             console.log("Formdata:", formData);
             console.log("Formdata, serialized:", formDataSerialized);
-            conversationalForm.addRobotChatResponse("Check the dev console for FormatData output.");
+            conversationalForm.addRobotChatResponse("Ainda estou em fase de testes. Vários erros" +
+                " e bugs serão corrigidos na versão final!");
         }
     });
 };
