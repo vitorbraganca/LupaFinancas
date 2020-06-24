@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_64" data-name="Rectangle 64" width="68" height="68" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="user-img" clip-path="url(#clip-path)">
+    <g id="finger" transform="translate(0 10.626)">
+      <path id="Path_93" data-name="Path 93" d="M36.125,40.374a4.252,4.252,0,0,0-4.25,4.25h0a4.252,4.252,0,0,0,4.25,4.25H38.25a4.25,4.25,0,0,0,0,8.5H59.5a8.525,8.525,0,0,0,8.5-8.5V29.834a4.25,4.25,0,0,0-1.806-3.476L45.135,11.572a4.235,4.235,0,0,0-5.27,6.63l6.5,5.172H14.875a4.25,4.25,0,0,0,0,8.5H34a4.252,4.252,0,0,0-4.25,4.25h0A4.252,4.252,0,0,0,34,40.374h6.375" transform="translate(-10.625 -10.626)" fill="#817be6"/>
+      <path id="Path_94" data-name="Path 94" d="M10.625,23.374h-8.5A2.018,2.018,0,0,0,0,25.261V55.483a2.018,2.018,0,0,0,2.125,1.891h8.5a2.018,2.018,0,0,0,2.125-1.887V25.265A2.018,2.018,0,0,0,10.625,23.374Z" transform="translate(55.25 -10.626)" fill="#2f4fd8"/>
+    </g>
+  </g>
+</svg>
